@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="30.0" layoutY="48.0" prefHeight="29.0" prefWidth="60.0" text="Nombre:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="84.0" prefHeight="21.0" prefWidth="53.0" text="Precio:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="115.0" prefHeight="21.0" prefWidth="74.0" text="Cantidad:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAgregar" layoutX="270.0" layoutY="113.0" mnemonicParsing="false" onAction="#agregar" text="Agregar" />
+      <TextField fx:id="txtNombre" layoutX="104.0" layoutY="50.0" />
+      <TextField fx:id="txtPrecio" layoutX="104.0" layoutY="82.0" />
+      <TextField fx:id="txtCantidad" layoutX="104.0" layoutY="113.0" />
+      <TableView fx:id="tabla" layoutX="38.0" layoutY="164.0" prefHeight="130.0" prefWidth="438.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="91.20001220703125" text="Nombre" />
+          <TableColumn fx:id="colPrecio" prefWidth="69.5999755859375" text="Precio" />
+            <TableColumn fx:id="colCantidad" prefWidth="65.60003662109375" text="Cantidad" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEliminar" layoutX="38.0" layoutY="315.0" mnemonicParsing="false" text="Eliminar fila" />
+   </children>
+</Pane>
